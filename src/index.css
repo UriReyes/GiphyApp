@@ -137,6 +137,10 @@ img {
   width: 30%;
 }
 
+.p-5 {
+  padding: 25px;
+}
+
 .py-5 {
   padding: 0 25px;
 }

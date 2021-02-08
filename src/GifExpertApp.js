@@ -4,19 +4,22 @@ import { GifFooter } from "./components/GifFooter";
 import { GifGrid } from "./components/GifGrid";
 import { GifHeader } from "./components/GifHeader";
 
-const GifExpertApp = () => {
-  //const categories = ["Naruto", "Dragon Ball", "Pokémon"];
-  const [categories, setCategories] = useState(["DOOM Eternal"]);
-
-  //   const handleAdd = (e) => setCategories([...categories, "Baki"]);
-
+const GifExpertApp = ({ defaultCategory = [] }) => {
+  // const [categories, setCategories] = useState(["DOOM Eternal"]);
+  const [categories, setCategories] = useState(defaultCategory);
   return (
     <>
       <GifHeader setCategories={setCategories} />
       <div>
-        {categories.map((category) => (
-          <GifGrid key={category} category={category} />
-        ))}
+        {categories.length === 0 ? (
+          <div className="title-app text-center p-5">
+            Aún no has buscado ningún Gif...
+          </div>
+        ) : (
+          categories.map((category) => (
+            <GifGrid key={category} category={category} />
+          ))
+        )}
       </div>
       <GifFooter />
     </>

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 import { GifGridItem } from "./GifGridItem";
 
@@ -23,10 +24,14 @@ export const GifGrid = ({ category }) => {
         </div>
       )}
       <div className="d-flex flex-wrap justify-content-between">
-        {images.map((img) => (
-          <GifGridItem key={img.id} {...img} />
+        {images.map(({ id, title, url }) => (
+          <GifGridItem key={id} title={title} url={url} />
         ))}
       </div>
     </div>
   );
+};
+
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired,
 };

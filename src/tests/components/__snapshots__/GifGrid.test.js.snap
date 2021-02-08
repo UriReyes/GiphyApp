@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Evaluar <GifGrid /> Debe de mostrar items cuando se cargan con useFetchGifs 1`] = `
+<div
+  className="container text-center"
+>
+  <h3
+    className="text-capitalize"
+  >
+    Naruto
+  </h3>
+  <hr />
+  <br />
+  <div
+    className="d-flex flex-wrap justify-content-between"
+  >
+    <GifGridItem
+      key="ABC"
+      title="titulo"
+      url="https://localhost/image.jpg"
+    />
+    <GifGridItem
+      key="123"
+      title="titulo2"
+      url="https://localhost/image.jpg"
+    />
+  </div>
+</div>
+`;
+
+exports[`Evaluar <GifGrid /> Debe hacer match con snapshot 1`] = `
+<div
+  className="container text-center"
+>
+  <h3
+    className="text-capitalize"
+  >
+    Naruto
+  </h3>
+  <hr />
+  <br />
+  <div
+    className="lds-roller"
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+  <div
+    className="d-flex flex-wrap justify-content-between"
+  />
+</div>
+`;

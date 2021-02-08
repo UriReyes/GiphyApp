@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Probando <AddCategory/> Debe de renderizar el <AddCategory /> correctamente 1`] = `
+<Fragment>
+  <form
+    className="formulario"
+    onSubmit={[Function]}
+  >
+    <div
+      className="d-flex-row"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Buscar"
+        type="text"
+        value=""
+      />
+      <button
+        className="d-flex-row align-items-center btn btn-search"
+        onClick={[Function]}
+      >
+        <p>
+          🔎
+        </p>
+      </button>
+    </div>
+  </form>
+  <br />
+</Fragment>
+`;

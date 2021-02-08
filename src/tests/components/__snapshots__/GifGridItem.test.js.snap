@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Probando GifGridItem Debe de mostrar el componente correctamente 1`] = `
+<div
+  className="d-flex justify-content-center flex-wrap card animate__animated animate__fadeIn n-father"
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+>
+  <div
+    className="n-child d-none d-flex-row align-items-bottom justify-content-between"
+  >
+    <p
+      className="text-capitalize text-title card-info"
+    >
+      Un titulo
+    </p>
+    <a
+      className="btn card-info"
+      href="https://imagen.gif"
+      rel="noreferrer"
+      target="_blank"
+    >
+      🔗
+    </a>
+  </div>
+  <img
+    alt="Un titulo"
+    onLoad={[Function]}
+    src="https://imagen.gif"
+    srcSet="loading.gif"
+  />
+</div>
+`;
